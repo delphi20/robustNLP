@@ -1,10 +1,15 @@
 import argparse
 import os
+import sys
 import torch
+import nltk 
 from threat_engine.threat_generator import ThreatGenerator
 from defense_engine.defender import Defender
 from evaluation.evaluator import Evaluator
 from api.server import start_api_server
+
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
 
 def parse_args():
     parser = argparse.ArgumentParser(description='NLP Defense System Against Adversarial Attacks')
@@ -25,6 +30,11 @@ def parse_args():
     return parser.parse_args()
 
 def main():
+    
+    
+    
+    
+    
     args = parse_args()
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     print(f"Using device: {device}")
@@ -67,4 +77,7 @@ def main():
         )
 
 if __name__ == "__main__":
+    
+    
+    
     main()
