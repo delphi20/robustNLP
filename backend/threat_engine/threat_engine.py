@@ -5,6 +5,8 @@ from textattack.attack_results import SuccessfulAttackResult
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 import pandas as pd
+import nltk 
+
 
 class ThreatGenerator:
     """

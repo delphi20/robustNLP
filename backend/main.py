@@ -3,10 +3,10 @@ import os
 import sys
 import torch
 import nltk 
-from threat_engine.threat_generator import ThreatGenerator
-from defense_engine.defender import Defender
-from evaluation.evaluator import Evaluator
-from api.server import start_api_server
+from threat_engine.threat_engine import ThreatGenerator
+from defense_engine.defense_engine import Defender
+from evaluation.evaluation import Evaluator
+from api.api import start_api_server
 
 # sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,7 +32,7 @@ def parse_args():
 def main():
     
     
-    
+    nltk.download("stopwords")
     
     
     args = parse_args()
