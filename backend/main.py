@@ -32,7 +32,8 @@ def parse_args():
 def main():
     
     
-    nltk.download("stopwords")
+    # nltk.download("stopwords")
+    # nltk.download('averaged_perceptron_tagger_eng')
     
     
     args = parse_args()

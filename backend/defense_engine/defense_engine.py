@@ -43,8 +43,8 @@ class Defender:
         """
         if dataset_name == 'imdb':
             dataset = load_dataset('imdb', split=split)
-            dataset = dataset.rename_column('text', 'text')
-            dataset = dataset.rename_column('label', 'label')
+            # dataset = dataset.rename_column('text', 'text')
+            # dataset = dataset.rename_column('label', 'label')
         elif dataset_name == 'sst2':
             dataset = load_dataset('glue', 'sst2', split=split)
             dataset = dataset.rename_column('sentence', 'text')
